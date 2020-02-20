@@ -1,12 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         int payment = 1050;
-        int amount = 17;
-        int percent;
-        percent = 11;
-        int bonus = (int) (payment * percent / 100);
-        if (payment * percent > 100) {
-            System.out.println(bonus);
+        //пополнение баланса
+        int balance = 17;
+        double v = 1.1;
+        double cashback;
+        // cashback: по 1 рублю за каждые 100 рублей
+        cashback = 1.1;
+        int account = (int) (payment * cashback) + balance;
+        if (payment * cashback > 100) {
+            System.out.println(account);
         }
     }
 }
