@@ -3,14 +3,12 @@ public class Main {
         boolean condition = true;
         int balance = 25;
         int payment = 1250;
-        int bonus = payment / 100;
-        int total = balance + payment + bonus;
+        int bonus;
         if (payment > 1000) {
-            bonus = payment /100;
+            bonus = payment / 100;
         } else {
             bonus = 0;
         }
         System.out.println(bonus);
     }
 }
-
